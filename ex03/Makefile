@@ -10,7 +10,7 @@ all : $(NAME)
 $(NAME) : $(OBJS)
 	$(CC) $(FLAGS) $(OBJS)
 
-%.o : %.cpp $(HEADERS)
+%.o : %.cpp
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean :
